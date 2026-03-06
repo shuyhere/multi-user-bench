@@ -1,7 +1,7 @@
 <p align="center">
-  <h1 align="center">🎭 Muses-Bench</h1>
+  <h1 align="center">🎭 Multi-User LLM</h1>
   <p align="center">
-    <strong>A Benchmark for Multi-User LLM Agents</strong>
+    <strong>Multi-User Large Language Model Agents</strong>
   </p>
   <p align="center">
     <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg" alt="arXiv"></a>
@@ -12,13 +12,13 @@
 
 Official code for the paper: **"Multi-User Large Language Model Agents"**
 
-> LLM-based agents are increasingly capable of navigating complex environments, but prior work overwhelmingly assumes a single user with a single utility function. Real-world deployments involve **multiple users** with different roles, permissions, and preferences. Muses-Bench provides a formal framework and benchmark to evaluate how LLM agents handle multi-user interactions.
+> LLM-based agents are increasingly capable of navigating complex environments, but prior work overwhelmingly assumes a single user with a single utility function. Real-world deployments involve **multiple users** with different roles, permissions, and preferences. Multi-User LLM provides a formal framework and benchmark to evaluate how LLM agents handle multi-user interactions.
 
 ---
 
 ## 📋 Overview
 
-Muses-Bench evaluates four fundamental capabilities of multi-user LLM agents:
+Multi-User LLM evaluates four fundamental capabilities of multi-user LLM agents:
 
 | Capability | Scenario | What It Tests |
 |:---|:---|:---|
@@ -346,7 +346,7 @@ python run.py \
 
 ## 🔧 Supported Models
 
-Muses-Bench uses [LiteLLM](https://github.com/BerriAI/litellm) and supports **100+ LLM providers**, including:
+Multi-User LLM uses [LiteLLM](https://github.com/BerriAI/litellm) and supports **100+ LLM providers**, including:
 
 - OpenAI (GPT-4o, GPT-4o-mini, o1, etc.)
 - Anthropic (Claude 3.5 Sonnet, Claude 3.5 Haiku, etc.)
