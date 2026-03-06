@@ -1,10 +1,4 @@
-<p align="center">
-  <img src="assets/stanford_logo.png" alt="Stanford University" width="80">
-</p>
-<h1 align="center">🎭 Multi-User Large Language Model Agents</h1>
-<p align="center">
-  <em>Stanford University &nbsp;·&nbsp; KAUST &nbsp;·&nbsp; University of Toronto &nbsp;·&nbsp; MIT</em>
-</p>
+<h1 align="center"><img src="assets/stanford_logo.png" alt="Stanford University" width="36" style="vertical-align: middle;"> Multi-User Large Language Model Agents</h1>
 <p align="center">
   <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg" alt="arXiv"></a>
   <a href="https://shuyhere.github.io/multi-user-llm/"><img src="https://img.shields.io/badge/Project-Page-1E3A5F.svg" alt="Project Page"></a>
