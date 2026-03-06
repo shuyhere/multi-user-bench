@@ -1,7 +1,7 @@
-<h1 align="center"><a href="https://shuyhere.github.io/multi-user-llm/">🎭 Multi-User Large Language Model Agents</a></h1>
+<h1 align="center"><a href="https://korde-ai.github.io/multi-user-llm/">🎭 Multi-User Large Language Model Agents</a></h1>
 <p align="center">
   <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg" alt="arXiv"></a>
-  <a href="https://shuyhere.github.io/multi-user-llm/"><img src="https://img.shields.io/badge/Project-Page-1E3A5F.svg" alt="Project Page"></a>
+  <a href="https://korde-ai.github.io/multi-user-llm/"><img src="https://img.shields.io/badge/Project-Page-1E3A5F.svg" alt="Project Page"></a>
   <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>
   <a href="https://www.python.org/downloads/release/python-3100/"><img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="Python 3.10+"></a>
 </p>
