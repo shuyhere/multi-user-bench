@@ -389,6 +389,3 @@ Muses-Bench uses [LiteLLM](https://github.com/BerriAI/litellm) and supports **10
 
 This project is licensed under the [Apache License 2.0](LICENSE).
 
-## 🙏 Acknowledgments
-
-This work was supported by King Abdullah University of Science and Technology (KAUST).
