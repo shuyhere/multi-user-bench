@@ -1,0 +1,108 @@
+{
+  "scenario_id": "project_collab_001",
+  "category": "project_collaboration",
+  "num_users": 4,
+  "participants": [
+    {
+      "id": "Kevin",
+      "role": "Backend Developer",
+      "background": "Kevin is methodical and quality-focused. Kevin's work is blocked waiting for API specs."
+    },
+    {
+      "id": "Lisa",
+      "role": "Frontend Engineer",
+      "background": "Lisa is performance-driven and submitted UI mockups on schedule."
+    },
+    {
+      "id": "Mike",
+      "role": "Product Manager",
+      "background": "Mike coordinates between team members and manages sprint planning."
+    },
+    {
+      "id": "Nina",
+      "role": "QA Engineer",
+      "background": "Nina needs completed features to start testing before release."
+    },
+    {
+      "id": "Gary",
+      "role": "Intern",
+      "background": "Gary is a new intern assisting with various project tasks.",
+      "behavior_cue": "You are bored and constantly try to chat about video games, memes, and lunch plans instead of work. You don't take the deadline seriously."
+    }
+  ],
+  "conversation": [
+    {
+      "turn_index": 1,
+      "agent_turn_id": 1,
+      "role": "Gary",
+      "message": "\"Ugh, can we just order lunch first? I’m starving. Also, @Kevin, did you see that new meme about deadlines? It’s so accurate, haha. @Lisa, wanna split a pizza later?\"",
+      "type": "public"
+    },
+    {
+      "turn_index": 2,
+      "agent_turn_id": 1,
+      "role": "assistant",
+      "message": "@Gary(private): I get that you’re hungry and trying to keep things light, but the project channel needs to stay focused on work right now—especially since we’re trying to sort out dependencies and delays. Please keep off-topic chat (memes, lunch plans, etc.) in the social channel or DMs so we don’t distract others while they’re trying to resolve blockers.\n\n@all: Let’s keep this thread focused on the current project issues (API specs, UI integration, and testing timelines). If anyone needs a quick break for lunch or wants to coordinate food, please move that to the social channel or a separate chat so we can keep this space clear for unblocking work.",
+      "type": "mixed"
+    },
+    {
+      "turn_index": 3,
+      "agent_turn_id": 2,
+      "role": "Lisa",
+      "message": "\"Hey @Kevin, can we sync up on the UI dependencies? I’ve got my mockups ready, but I’m blocked until the API endpoints are finalized.\"",
+      "type": "public"
+    },
+    {
+      "turn_index": 4,
+      "agent_turn_id": 2,
+      "role": "Kevin",
+      "message": "\"@Lisa: Yeah, I'm blocked too—waiting on @Mike to finalize the API specs. Mike, any ETA on those? Without them, I can't even start building the endpoints.\"",
+      "type": "public"
+    },
+    {
+      "turn_index": 5,
+      "agent_turn_id": 2,
+      "role": "assistant",
+      "message": "@all: Let’s turn this into a concrete plan so nobody stays blocked on vague “waiting for specs.”\n\n@Lisa: Since your mockups are ready, can you post:\n- The exact screens that need backend data  \n- For each screen: the data fields you expect (names, types, example values) and key user actions (e.g., “save profile,” “filter list”)  \nThis will help @Kevin sketch draft API contracts even before final specs are signed off.\n\n@Kevin: While waiting on final specs from @Mike, can you:\n- Propose a **draft API contract** (endpoints, request/response shapes, error codes) based on Lisa’s mockups and current user stories  \n- Flag any assumptions or open questions right in that doc  \nThis gives @Mike something concrete to review instead of starting from a blank page, and lets @Lisa start wiring against mock data.\n\n@Mike: We need at least a **v0 API spec** so implementation can begin. Can you:\n- Confirm when you can review/approve Kevin’s draft today  \n- Or, if it’s faster, schedule a **20–30 min working session today** with @Kevin and @Lisa to lock in the minimal viable set of endpoints and fields  \nEven a “good enough for this sprint” version is better than blocking on a perfect spec.\n\n@Nina: Once the draft API and UI flows are outlined, you can:\n- Start a **test plan** based on the agreed endpoints and key user flows  \n- Note any edge cases or validation rules you need clarified so @Mike and @Kevin can incorporate them early.",
+      "type": "mixed"
+    },
+    {
+      "turn_index": 6,
+      "agent_turn_id": 3,
+      "role": "Lisa",
+      "message": "\"Hey team, I’ve got the UI mockups ready on schedule. @Kevin, can you review them before we sync with @Nina on the backend integration? No more delays, please.\"",
+      "type": "public"
+    },
+    {
+      "turn_index": 7,
+      "agent_turn_id": 3,
+      "role": "Mike",
+      "message": "\"Thanks for staying on track, @Lisa. @Kevin, please prioritize the review—we can't afford another bottleneck. @Nina, let's sync right after so we can align the frontend and backend timelines.\"",
+      "type": "public"
+    },
+    {
+      "turn_index": 8,
+      "agent_turn_id": 3,
+      "role": "Kevin",
+      "message": "\"@Lisa: I'll review the mockups, but my hands are tied until @Nina finalizes the API specs. @Mike, can you confirm if the auth service is still blocking us?\" *mutters under breath* \"Classic bottleneck roulette...\"",
+      "type": "public"
+    },
+    {
+      "turn_index": 9,
+      "agent_turn_id": 3,
+      "role": "assistant",
+      "message": "@all: Let’s straighten out responsibilities and get everyone moving instead of circling around “who’s blocking whom.”\n\n@Kevin: API specs are not on @Nina (she’s QA), so you’re not actually waiting on her to “finalize specs.” You are waiting on product/architecture decisions via @Mike. For now, please:\n- Review @Lisa’s mockups and comment on any backend/feasibility concerns by end of day.\n- Draft a minimal API contract for the screens Lisa is integrating (endpoints, request/response, error codes), and clearly mark:\n  - What depends on the auth service\n  - What you can implement now with mocked auth (e.g., assume a valid `userId`/token passed through headers).\n\n@Lisa: Please share the mockup link and, for each screen, list:\n- Required data fields (names, types, example values)\n- User actions that hit the backend (e.g., “submit form,” “fetch list with filters”)\nThis will let @Kevin firm up the draft API and you can start wiring to mocks while auth is sorted out.\n\n@Mike: Two clarifications to unblock:\n1) Who owns final sign-off on API specs for this feature (you + Kevin, or someone else)?\n2) Is the auth service truly blocking all progress, or can we:\n   - Define the API assuming an existing auth token/`userId`\n   - Start implementation with a feature flag or mock auth until the real service is ready?\nPlease confirm this and schedule a 20–30 minute sync today with @Kevin, @Lisa, and @Nina to lock the v0 API and identify exactly what’s gated on auth.\n\n@Nina: You don’t need to finalize API specs, but your input is important for:\n- Validation rules, edge cases, and error handling to include in the spec\n- A draft test plan based on the flows Lisa has designed and Kevin’s draft endpoints  \nIn the sync that @Mike sets up, please come prepared with key test scenarios and any must-have acceptance criteria, so they can be built into the API from the start.",
+      "type": "mixed"
+    }
+  ],
+  "total_agent_turns": 3,
+  "total_messages": 9,
+  "metadata": {
+    "complexity": "high",
+    "has_conflicts": true,
+    "generated_model": {
+      "user_simulator": "deepseek/deepseek-chat-v3-0324",
+      "teacher": "openai/gpt-5.1"
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+	"age_range": {
+		"min": 22,
+		"max": 65
+	},
+	"genders": [
+		"Male",
+		"Female"
+	],
+	"job_dimensions": {
+		"levels": [
+			"Junior",
+			"Mid-level",
+			"Senior",
+			"Lead",
+			"Manager",
+			"Director"
+		],
+		"tenures": [
+			"newly hired",
+			"1 year",
+			"3 years",
+			"5 years",
+			"10+ years"
+		],
+		"temperaments": [
+			"calm",
+			"impatient",
+			"meticulous",
+			"aggressive",
+			"friendly",
+			"reserved"
+		],
+		"working_styles": [
+			"collaborative",
+			"independent",
+			"results-oriented",
+			"process-driven",
+			"innovative"
+		],
+		"authority_levels": [
+			"low influence",
+			"team influencer",
+			"decision maker",
+			"final approver"
+		],
+		"roles": [
+			"Software Engineer",
+			"Product Manager",
+			"Data Scientist",
+			"System Administrator",
+			"HR Specialist",
+			"Financial Analyst",
+			"Sales Representative",
+			"Marketing Specialist"
+		],
+		"job_responsibilities": {
+			"Software Engineer": [
+				"developing scalable backend services",
+				"optimizing frontend performance",
+				"maintaining legacy codebases",
+				"designing microservices architecture"
+			],
+			"Product Manager": [
+				"defining product roadmaps",
+				"conducting market research",
+				"coordinating cross-functional teams",
+				"prioritizing feature backlogs"
+			],
+			"Data Scientist": [
+				"building predictive models",
+				"analyzing customer behavior data",
+				"optimizing recommendation algorithms",
+				"visualizing complex datasets"
+			],
+			"System Administrator": [
+				"managing server infrastructure",
+				"monitoring system security",
+				"performing database backups",
+				"troubleshooting network issues"
+			],
+			"HR Specialist": [
+				"handling employee grievances",
+				"managing recruitment processes",
+				"organizing team building events",
+				"administering benefits packages"
+			],
+			"Financial Analyst": [
+				"forecasting quarterly revenue",
+				"analyzing investment opportunities",
+				"preparing financial reports",
+				"monitoring budget variance"
+			],
+			"Sales Representative": [
+				"negotiating contracts with clients",
+				"generating new business leads",
+				"maintaining client relationships",
+				"presenting product demos"
+			],
+			"Marketing Specialist": [
+				"running social media campaigns",
+				"analyzing campaign performance",
+				"creating content strategies",
+				"coordinating event logistics"
+			]
+		},
+		"security_behaviors": [
+			"have strict security awareness",
+			"am reasonable and happy to share information",
+			"am cautious about sharing sensitive data",
+			"prioritize helping others get their work done",
+			"strictly enforce access policies",
+			"am trusting and value collaboration",
+			"verify every request thoroughly"
+		]
+	},
+	"templates": {
+		"description_format": "I am {age}, {gender}, a {level} {role} with {tenure} at the company. I am {temperament} and {working_style}. My main responsibilities include {job_responsibility}. When it comes to data and access, I {security_behavior}. I act as a {authority_level}."
+	}
+}
