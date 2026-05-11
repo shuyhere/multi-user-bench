@@ -154,14 +154,11 @@ This project is licensed under the [Apache License 2.0](LICENSE).
 ## 📝 Citation
 
 ```bibtex
-@misc{yang2026multiuserlargelanguagemodel,
-      title={Multi-User Large Language Model Agents}, 
-      author={Shu Yang and Shenzhe Zhu and Hao Zhu and José Ramón Enríquez and Di Wang and Alex Pentland and Michiel A. Bakker and Jiaxin Pei},
-      year={2026},
-      eprint={2604.08567},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2604.08567}, 
+@article{yang2026multi,
+  title={Multi-User Large Language Model Agents},
+  author={Yang, Shu and Zhu, Shenzhe and Zhu, Hao and Enr{\'\i}quez, Jos{\'e} Ram{\'o}n and Wang, Di and Pentland, Alex and Bakker, Michiel A and Pei, Jiaxin},
+  journal={arXiv preprint arXiv:2604.08567},
+  year={2026}
 }
 ```
 
