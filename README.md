@@ -2,7 +2,7 @@
 <p align="center">
   <a href="https://arxiv.org/abs/2604.08567"><img src="https://img.shields.io/badge/arXiv-2604.08567-b31b1b.svg" alt="arXiv"></a>
   <a href="https://huggingface.co/papers/2604.08567"><img src="https://img.shields.io/badge/🤗-Daily%20Paper-yellow.svg" alt="HuggingFace Daily Paper"></a>
-  <a href="https://kordi-ai.github.io/Multi-User-LLM-Agent/"><img src="https://img.shields.io/badge/Project-Page-1E3A5F.svg" alt="Project Page"></a>
+  <a href="https://kordi-lab.github.io/Multi-User-LLM-Agent/"><img src="https://img.shields.io/badge/Project-Page-1E3A5F.svg" alt="Project Page"></a>
   <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>
   <a href="https://www.python.org/downloads/release/python-3100/"><img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="Python 3.10+"></a>
 </p>
